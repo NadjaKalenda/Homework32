@@ -62,18 +62,19 @@ public class BankOperation {
     }
 
     public double calculateDebitRate() {
-        if ( debitNumber!= null ) {
+        if (debitNumber != null) {
             return debitNumber.getDebitRate();
         }
         return DEBIT_RATE;
 
     }
-public void printInfo(){
-        switch (debitNumber){
+
+    public void printInfo() {
+        switch (debitNumber) {
             case DEBIT -> System.out.println("Ok");
 
         }
-}
+    }
 }
 
 

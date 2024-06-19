@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int amount = scanner.nextInt();
+        double amount = scanner.nextInt();
         BankOperation bankOperationDebit = new BankOperation(1, 1, 1000, OperationDebit.DEBIT);
         DebCalculator calculator = new DebCalculator();
         bankOperationDebit.printInfo();
@@ -14,12 +14,12 @@ public class Main {
         double debit = calculator.calculate(bankOperationDebit, 1);
         System.out.println(debit);
 
-        List<Integer> list = new ArrayList<>();
+        List<Integer> bankDebit = new ArrayList<>();
 
         while (true) {
-            list.add(amount);//бесконечное считывание
+            bankDebit.add(amount);//бесконечное считывание
 
-            if (amount == -1) {
+            if (amount == 0) {
                 break;
             }
 
